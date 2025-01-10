@@ -4,9 +4,13 @@ import { Instagram } from 'lucide-react';
 import { Youtube } from 'lucide-react';
 import { Facebook } from 'lucide-react';
 import { Twitter } from 'lucide-react';
+import { User } from 'lucide-react';
+import { Search } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
+import { Heart } from 'lucide-react';
 const Header = () => {
   return (
-    <section >
+    <section className='font-montserrat'>
 
            {/* Header Bar */}
       <div className="flex items-center justify-between px-20  bg-slate-800 h-[58px] text-white ">
@@ -38,8 +42,29 @@ const Header = () => {
       
        
       </div>
-      <div className="bg-neutral-50 h-[58px] mt-18">
-      <h1>DownSide</h1>
+      <div className=" flex justify-between bg-neutral-50 h-[58px] mt-18 px-20 pt-5">
+        <div className='flex gap-20 '>
+      <h3 className='text-2xl font-bold mr-10'>LethyGo</h3>
+      <nav >
+        <ul className='flex gap-8'>
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>Pages</li>
+        </ul>
+      </nav>
+      </div>
+      <div className='flex justify-end gap-8'>
+        <div className='flex gap-2'>
+        <User />
+        <span> Login/ Register</span>
+        </div>
+        <Search />
+        <ShoppingCart />
+        <Heart />
+      </div>
       </div>
     </section>
   )
