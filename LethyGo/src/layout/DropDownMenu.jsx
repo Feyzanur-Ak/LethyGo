@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { ChevronDown } from "lucide-react";
 
 const DropDownMenu = () => {
 
@@ -12,26 +12,26 @@ const DropDownMenu = () => {
   return (
     <div className="relative text-left">
       <button
-        onClick={toggleDropDown}>
+        onClick={toggleDropDown}
+        className=" flex text-slate-800 font-thin">
         Shop 
+        <ChevronDown className="w-4 h-4 relative top-1"/>
       </button>
-
       {isOpen && (
-      <div className="absolute mt-3 py-4 bg-white shadow-md rounded-lg w-80">
+      <div className="absolute mt-3 py-4 bg-white shadow-md rounded-lg w-[396px] h-[272px] ">
         <div className="cursor-pointer" >
-            <h3 className="text-center font-semibold mb-4">All Products</h3>
             <div className="flex flex-row justify-around gap-8 px-4 "> 
                 <div className="flex flex-col  gap-2">
-                    <h4 className="text-red-300 font-semibold">Women</h4>
-                    <ul className="flex flex-col gap-2 text-red-400">
+                    <h4 className="text-slate-800 font-semibold">Kadın</h4>
+                    <ul className="flex flex-col gap-4 text-neutral-500 py-6">
                         <li > <a href="#" ></a>Tshirt {/* Linkler güncellenecek sayfalar oluşturuldukça*/}
                         </li>
                         <li><a href="#" ></a>Shoes </li>
                     </ul>
                 </div>
                 <div className="flex flex-col gap-1">
-                    <h4 className="text-blue-300 font-semibold">Men</h4>
-                    <ul className="flex flex-col gap-2 text-blue-400">
+                    <h4 className="text-slate-800 font-semibold">Erkek</h4>
+                    <ul className="flex flex-col gap-4 text-neutral-500 py-6">
                         <li> <a href="#"></a>Tshirt</li>
                         <li><a href="#"></a>Shoes</li>
                     </ul>

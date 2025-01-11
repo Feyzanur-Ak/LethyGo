@@ -27,7 +27,7 @@ const Header = () => {
           <ul className="flex flex-col items-center gap-4 py-4 text-neutral-500 cursor-pointer">
             <li>Home</li>
             <li className="font-bold ">
-              <a href="#">Product</a></li>
+            <a href="#">Product</a></li>
             <li className="font-bold ">Pricing</li>
             <li className="font-bold ">Contact</li>
           </ul>
@@ -79,7 +79,7 @@ const Header = () => {
           <div className="flex gap-20">
             <h3 className="text-3xl font-bold mr-10">LethyGo</h3>
             <nav>
-              <ul className="flex gap-8">
+              <ul className="flex gap-8 text-neutral-500 font-bold">
                 <li>Home</li>
                 <DropDownMenu />
                 <li>About</li>
