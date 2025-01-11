@@ -1,3 +1,4 @@
+import Footer from "./layout/Footer"
 import Header from "./layout/Header"
 
 
@@ -8,6 +9,7 @@ function App() {
 
       <div>
         <Header/>
+        <Footer/>
       </div>
   )
 }
