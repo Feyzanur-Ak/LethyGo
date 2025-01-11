@@ -9,6 +9,7 @@ import { Search } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
 import { Heart } from "lucide-react";
 import { Menu } from "lucide-react";
+import DropDownMenu from "./DropDownMenu";
 
 const Header = () => {
   return (
@@ -70,7 +71,7 @@ const Header = () => {
             <nav>
               <ul className="flex gap-8">
                 <li>Home</li>
-                <li>Shop</li>
+                <DropDownMenu />
                 <li>About</li>
                 <li>Blog</li>
                 <li>Contact</li>
@@ -79,7 +80,7 @@ const Header = () => {
             </nav>
           </div>
           <div className="flex justify-end gap-8 cursor-pointer text-sky-500">
-            <div className="flex gap-2 ">
+            <div className="flex gap-2">
               <User />
               <span> Login/ Register</span>
             </div>
