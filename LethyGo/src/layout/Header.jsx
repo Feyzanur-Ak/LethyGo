@@ -1,17 +1,10 @@
-import { Phone } from "lucide-react";
-import { Mail } from "lucide-react";
-import { Instagram } from "lucide-react";
-import { Youtube } from "lucide-react";
-import { Facebook } from "lucide-react";
-import { Twitter } from "lucide-react";
-import { User } from "lucide-react";
-import { Search } from "lucide-react";
-import { ShoppingCart } from "lucide-react";
-import { Heart } from "lucide-react";
-import { Menu } from "lucide-react";
+import { Phone, Mail, Instagram, Youtube, Facebook, Twitter, User, Search, ShoppingCart, Heart, Menu,X } from "lucide-react";
 import DropDownMenu from "./DropDownMenu";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <section className="font-montserrat">
       {/* Mobil Header */}
@@ -21,9 +14,26 @@ const Header = () => {
           <User /> {/* Mobilde User ikonunu ekledik */}
           <Search />
           <ShoppingCart />
-          <Menu />
+         {/* Menü İkonu */}
+         <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X /> : <Menu />}
+          </button>
         </div>
       </div>
+
+      {/* Mobil Menü */}
+      {isMenuOpen && (
+        <div className="absolute top-[58px] left-0 w-full bg-neutral-50 hadow-lg">
+          <ul className="flex flex-col items-center gap-4 py-4 text-neutral-500 cursor-pointer">
+            <li>Home</li>
+            <li className="font-bold ">
+              <a href="#">Product</a></li>
+            <li className="font-bold ">Pricing</li>
+            <li className="font-bold ">Contact</li>
+          </ul>
+        </div>
+      )}
+
 
       {/* Büyük Ekran Header */}
       <div className="hidden md:flex flex-col">
