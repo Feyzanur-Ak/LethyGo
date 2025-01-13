@@ -18,7 +18,7 @@ const DropDownMenu = () => {
         <ChevronDown className="w-4 h-4 relative top-1"/>
       </button>
       {isOpen && (
-      <div className="absolute mt-3 py-4 bg-white shadow-md rounded-lg w-[396px] h-[272px] ">
+      <div className="absolute mt-3 py-4 bg-white shadow-md rounded-lg w-[396px] h-[272px] z-50 ">
         <div className="cursor-pointer" >
             <div className="flex flex-row justify-around gap-8 px-4 "> 
                 <div className="flex flex-col  gap-2">

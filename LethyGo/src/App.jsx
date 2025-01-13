@@ -1,5 +1,6 @@
 import Footer from "./layout/Footer"
 import Header from "./layout/Header"
+import HeroSlider from "./layout/HeroSlider"
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 
       <div>
         <Header/>
+        <HeroSlider/>
         <Footer/>
       </div>
   )
