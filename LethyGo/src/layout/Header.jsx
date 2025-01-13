@@ -1,6 +1,6 @@
 import { Phone, Mail, Instagram, Youtube, Facebook, Twitter, User, Search, ShoppingCart, Heart, Menu,X } from "lucide-react";
-import DropDownMenu from "./DropDownMenu";
 import { useState } from "react";
+import DropDownMenu from "../components/DropDownMenu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
