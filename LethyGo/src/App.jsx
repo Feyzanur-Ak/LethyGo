@@ -1,22 +1,20 @@
-import CategoryPick from "./layout/CategoryPick"
-import Footer from "./layout/Footer"
-import Header from "./layout/Header"
-import HeroSlider from "./layout/HeroSlider"
-import ProductCategoryList from "./layout/ProductCategoryList"
+import PageContent from "./layout/PageContent"
+import { BrowserRouter as Router, Route, Switch  } from "react-router-dom"
+import HomePage from "./pages/HomePage"
 
 
 function App() {
 
 
-  return (
-
-      <div>
-        <Header/>
-        <HeroSlider/>
-        <CategoryPick/>
-        <ProductCategoryList/>
-        <Footer/>
-      </div>
+  return (  
+      <Router>
+      <PageContent>
+        <Switch>
+          <Route exact path="/" component={HomePage}   />
+          
+          </Switch>
+      </PageContent>
+      </Router>
   )
 }
 

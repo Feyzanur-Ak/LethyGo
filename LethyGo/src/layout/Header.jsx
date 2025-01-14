@@ -1,6 +1,7 @@
 import { Phone, Mail, Instagram, Youtube, Facebook, Twitter, User, Search, ShoppingCart, Heart, Menu,X } from "lucide-react";
 import { useState } from "react";
 import DropDownMenu from "../components/DropDownMenu";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,11 +24,10 @@ const Header = () => {
 
       {/* Mobil Menü */}
       {isMenuOpen && (
-        <div className="absolute top-[58px] left-0 w-full bg-neutral-50 hadow-lg z-10">
-          <ul className="flex flex-col items-center gap-4 py-4 text-neutral-500 cursor-pointer">
-            <li>Home</li>
-            <li className="font-bold ">
-            <a href="#">Product</a></li>
+        <div className="absolute top-[58px] left-0 w-full bg-neutral-50 hadow-lg z-10 cursor-pointer">
+          <ul className="flex flex-col items-center gap-4 py-4 text-neutral-500 ">
+            <li> <Link exact to="/">Home</Link></li>
+            <li className="font-bold "> <Link exact to="/product">Product</Link></li>
             <li className="font-bold ">Pricing</li>
             <li className="font-bold ">Contact</li>
           </ul>
@@ -75,7 +75,7 @@ const Header = () => {
         </div>
 
         {/* Alt Header Bar */}
-        <div className="flex justify-between bg-neutral-50 h-[58px] px-20 pt-5">
+        <div className="flex justify-between bg-neutral-50 h-[58px] px-20 pt-5 cursor-pointer">
           <div className="flex gap-20">
             <h3 className="text-3xl font-bold mr-10">LethyGo</h3>
             <nav>
