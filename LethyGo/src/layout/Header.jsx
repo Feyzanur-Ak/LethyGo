@@ -23,7 +23,7 @@ const Header = () => {
 
       {/* Mobil Menü */}
       {isMenuOpen && (
-        <div className="absolute top-[58px] left-0 w-full bg-neutral-50 hadow-lg">
+        <div className="absolute top-[58px] left-0 w-full bg-neutral-50 hadow-lg z-10">
           <ul className="flex flex-col items-center gap-4 py-4 text-neutral-500 cursor-pointer">
             <li>Home</li>
             <li className="font-bold ">
