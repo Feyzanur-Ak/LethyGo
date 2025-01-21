@@ -1,11 +1,17 @@
+import BreadCrumb from "../components/BreadCrumb"
+import ShopCard from "../components/ShopCard"
 import ShopHead from "../components/ShopHead"
 
 
 const ShopPage = () => {
   return (
-    <div>
+    <section className="py-4">
+      <div className="flex justify-around">
       <ShopHead />
-    </div>
+      <BreadCrumb />
+      </div>
+      <ShopCard />
+    </section>
   )
 }
 

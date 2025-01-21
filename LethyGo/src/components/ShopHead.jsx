@@ -2,8 +2,8 @@
 
 const ShopHead = () => {
   return (
-    <div>
-      <h1>ShopPage</h1>
+    <div >
+      <h3 className="text-slate-800 text-xl font-bold">Shop</h3>
     </div>
   )
 }
