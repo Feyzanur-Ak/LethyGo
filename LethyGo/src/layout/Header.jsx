@@ -92,7 +92,7 @@ const Header = () => {
           <div className="flex justify-end gap-8 cursor-pointer text-sky-500">
             <div className="flex gap-2">
               <User />
-              <span> Login/ Register</span>
+              <Link to="/signup"><span> Login/ Register</span></Link>
             </div>
             <Search />
             <ShoppingCart />
