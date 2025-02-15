@@ -4,6 +4,7 @@ import ShopHead from "../components/ShopHead"
 import FilterSideBar from "../components/FilterSideBar"
 import ProductCard from "../components/ProductCard"
 import Pagination from "../components/ui-kit/Pagination"
+import ShopPageUnder from "../components/ShopPageUnder"
 
 const ShopPage = () => {
   return (
@@ -21,6 +22,9 @@ const ShopPage = () => {
       <ProductCard />
       </div>
       <Pagination />
+      <div className="py-10">
+      <ShopPageUnder />
+      </div>
     </section>
   )
 }
