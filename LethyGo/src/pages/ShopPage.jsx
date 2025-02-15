@@ -13,7 +13,7 @@ const ShopPage = () => {
       <BreadCrumb />
       </div>
       <ShopCard />
-      <div>
+      <div className="px-60">
         <FilterSideBar />
       </div>
       <div className="flex flex-col items-center">
